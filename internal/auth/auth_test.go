@@ -26,7 +26,7 @@ func TestGetAPIKey(t *testing.T) {
 			args: args{
 				headers: h1,
 			},
-			want:    "12345",
+			want:    "123456",
 			wantErr: false,
 		},
 		{
