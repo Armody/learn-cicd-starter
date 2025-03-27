@@ -34,5 +34,10 @@ jobs:
         with:
           go-version: "1.23.0"
 
-      - name: Check style
+      - name: Check formatting
         run: test -z $(go fmt ./...)
+
+      - name: Check linting
+        uses: dominikh/staticcheck-action
+        with:
+          version: "latest"
